@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://impa.br/en_US/'>IMPA</a>. hallpaz@impa.br
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>São Paulo, Brazil</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an AI Graphics Researcher and PhD Candidate at IMPA 🇧🇷. My research interest lies in the intersection of computer graphics, computer vision, and machine learning. My PhD research focuses on neural implicit representations for media objects such as images, videos, and 3D models. In 2022, I was a Research Scientist Intern at Reality Labs Research (Meta) in Pittsburgh, PA 🇺🇸, where I contributed to the Codec Avatars project, working with inverse rendering, 3D modeling and generative models.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am also the co-creator of the YouTube channel [Programação Dinâmica](http://youtube.com/@pgdinamica), where I talk about programming, data science, artificial intelligence, and scientific outreach, along with my personal experiences and career as a researcher. The channel has garnered over 200K subscribers, was part of the [YouTube Black Voices Fund class of 2022](https://blog.youtube/intl/pt-br/news-and-events/brasil-fundo-vozes-negras-2022/), and was recognized by YouTube as a [Creator of Impact](https://blog.youtube/intl/pt-br/news-and-events/criadores-de-impacto-ampliando-horizontes-e-fortalecendo-a-comunidade/) in 2024.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have extensive experience in software development, teaching programming across all levels — from completely beginners to graduate students — and creating educational content in both text and video formats. I hold a Master's degree in Mathematics with a focus on Computer Graphics from IMPA, where my thesis explored implicit surface reconstruction from depth image data. Additionally, I have a Bachelor's degree in Computer Engineering from the Instituto Militar de Engenharia (Military Institute of Engineering).
+
+If you want to shape new perspectives on the world, whether digitally or physically, please call me in.
