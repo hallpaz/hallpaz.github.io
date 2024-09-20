@@ -1,39 +1,40 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Name
+      value: Hallison Paz
+    # - name: Date of Birth
+    #   value: 14th March 1879
     - name: Languages
-      value: English, German
+      value: English, Portuguese, French
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro, Brazil
+      year: 2020 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Conducting research on the multiresolution representation of images using neural networks (implicit neural fields).
+        - Developed MR-Net, an open-source framework on PyTorch for training multi-stage architectures.
+        - Collaborated on projects in neural rendering, human face generation, and implicit representation of surfaces and scenes.
+    - title: MSc
+      institution: Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro, Brazil
+      year: 2015 - 2017
       description:
-        - Description 1.
-        - Description 2.
+        - Thesis on the reconstruction of implicit surfaces from depth images (e.g., Microsoft Kinect data).
+      - title: Bachelor of Engineering
+      institution: Instituto Militar de Engenharia (IME), Rio de Janeiro, Brazil
+      year: 2010 - 2014
+      description:
+        - Bachelor’s Degree in Computer Engineering and Graduated as a Brazilian Army Officer.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Youtube Content Creator
+      institution: Programação Dinâmica
+      year: 2017 - Now
       description:
         - Description 1.
         - Description 2.
@@ -41,57 +42,79 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Research Scientist Intern, Pittsburgh, PA, USA
+      institution: Meta
+      year: 2022 - 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Contributed to the Codec Avatars project, supervised by Jason Saragih, focusing on the creation of photorealistic human avatars for VR/AR applications. A paper based on this internship was accepted at Siggraph Asia 2024.
+        - Leveraged PyTorch to tackle 3D modeling and image registration challenges using neural and inverse rendering techniques, alongside amortized optimization, and other machine learning methodologies for data-driven graphics.
+        - Trained large-scale generative models, including Variational Autoencoders, to achieve realistic avatar motion.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Graduate Teaching Assistant
+      institution: IMPA, Rio de Janeiro, Brazil
+      year: 2021 - 2023
+      description: 
+        - "Served as a Teaching Assistant for the courses 3D Graphics Systems: AI Graphics (Mar-Jun/2021); Image Processing for Graphics and Vision: Generative Models (Aug-Nov/2021); 3D Graphics Systems: Machine Learning for Modeling and Rendering (Mar-Jun/2022); and AI Graphics: Theory and Practice (Mar-Jun/2023)."
+        - Led practical laboratory sessions and, in 2023, taught 50% of the course content, including theoretical lectures.
+        - Designed, graded, and provided feedback on weekly assignments, while actively assisting students with their challenges.
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: AI Engineer
+      institution: Cyberlabs, Rio de Janeiro, Brazil
+      year: 2020 - 2020
       description:
+      - Developed Android and iOS modules for the KeyApp, a face recognition mobile app, implementing efficient preprocessing workflows that improved image quality before sending it to server-side deep learning models.
+      - Collaborated with cross-functional teams to ensure the seamless integration of facial recognition technology into client devices such as local cameras at doors, tablets, or drones, enhancing user experience.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Lecturer & Executive Coordinator of Postgraduate Studies
+      institution: Instituto Infnet, Rio de Janeiro, Brazil
+      year: 2018 - 2020
+      description:
+      - Taught courses on mobile application development for undergraduate I.T. students, focusing on the Android platform.
+      - Authored foundational teaching material for two courses and updated syllabi to use Kotlin.
+      - Top Performance Award for ranking among the top 20% of the institution’s lecturers based on student evaluations.
+      - Led the postgraduate program in Mobile Development, managing a team of instructors and modernizing the curriculum to align with industry standards, such as transitioning from Java to Kotlin and from Ionic to React Native.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Creator of Impact, Youtube.
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Youtube Black Voices Fund
+    - year: 2021
+      items:
+      - "Keynote Speaker at Python Brazil 2021: Delivered a keynote on Challenges in teaching Artificial Intelligence in Brazil at the largest Python conference in Brazil."
+    - year: 2019
+      items:
+      - "Top Performance Lecturer 2019: Ranked among the top 20% of lecturers at Infnet based on student evaluations"
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Computer Vision
       items:
-        - Description 1.
+        - Neural implicit fields
         - Description 2.
-    - title: Topic 2.
+    - title: Computer Graphics
       items:
-        - Description 1.
-        - Description 2.
+        - Generative modeling
+        - Neural and inverse rendering
+    - title: Machine Learning
+      items:
+        - Deep learning architectures
+        - Foundational models
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
