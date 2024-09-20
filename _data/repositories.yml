@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - hallpaz
+  - pgdinamica
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - pgdinamica/deeplearning
+  - visgraf/mrnet
+  - hallpaz/3dsystems21
+  - hallpaz/colorization-masks-gans
+  - programacaodinamica/raytracing
