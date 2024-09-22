@@ -14,6 +14,7 @@ profile:
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+latest_posts: false
 ---
 
 I am an AI Graphics Researcher and PhD Candidate at IMPA 🇧🇷. My research interest lies in the intersection of computer graphics, computer vision, and machine learning. My PhD research focuses on neural implicit representations for media objects such as images, videos, and 3D models. In 2022, I was a Research Scientist Intern at Reality Labs Research (Meta) in Pittsburgh, PA 🇺🇸, where I contributed to the Codec Avatars project, working with inverse rendering, 3D modeling and generative models.
