@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My [first paper based on my PhD research](10.1109/SIBGRAPI55357.2022.9991765) has been published on SIBGRAPI - 35th Conference on Graphics, Patterns and Images.
+My [first paper based on my PhD research](http://doi.org/10.1109/SIBGRAPI55357.2022.9991765) has been published on SIBGRAPI - 35th Conference on Graphics, Patterns and Images.

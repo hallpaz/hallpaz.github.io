@@ -8,5 +8,5 @@ related_posts: false
 
 After 7 years of consistently delivering content about programming, data science and artificial intelligence to the Portuguese-speaking community, the [Programação Dinâmica](https://youtube.com/@pgdinamica) channel has reached over 200 thousand subscribers!
 
-![](img/news/achievement-200k.png)
+![](assets/img/news/achievement-200k.png)
 
