@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media &amp; Talks | Hallison Paz</title>
+  <meta name="description" content="Personal academic website of Hallison Paz. Research in adversarial machine learning.">
+  <meta name="author" content="Hallison Paz">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Hallison Paz">
+  <meta property="og:description" content="Personal academic website of Hallison Paz. Research in adversarial machine learning.">
+  <meta property="og:type" content="website">
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+
+  <!-- KaTeX client-side math rendering (auto-render, skipping pre and code) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      throwOnError: false
+    });">
+  </script>
+
+  <!-- Early theme script to prevent FOUC -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('hallpaz-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="site-container">
+    <nav class="nav-wrapper" aria-label="Main Navigation">
+      <a href="/" class="nav-brand">
+        <span class="nav-brand-title">Hallison Paz</span>
+        <span class="nav-brand-badge">CMAP &bull; École Polytechnique</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        
+        <li>
+          <a href="/" class="nav-link ">
+            About
+          </a>
+        </li>
+        
+        <li>
+          <a href="/publications/" class="nav-link ">
+            Publications
+          </a>
+        </li>
+        
+        <li>
+          <a href="/teaching/" class="nav-link ">
+            Teaching
+          </a>
+        </li>
+        
+        <li>
+          <a href="/media/" class="nav-link active">
+            Media
+          </a>
+        </li>
+        
+        <li>
+          <a href="/blog/" class="nav-link ">
+            Blog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/news/" class="nav-link ">
+            News
+          </a>
+        </li>
+        
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Toggle light and dark mode">
+          <!-- Moon Icon (shown in Light mode) -->
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (shown in Dark mode) -->
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="main-content">
+    <div class="site-container">
+      
+<div class="section-header">
+  <h1 class="section-title">Media &amp; Talks</h1>
+  <p class="section-subtitle">Podcasts, invited conference keynotes, panel discussions, and educational video productions.</p>
+</div>
+
+<div class="media-grid">
+  
+  <a href="https://telesintese.com.br/forum-da-rnp-discutira-soberania-digital-ia-e-infraestrutura-em-brasilia/" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: RNP Forum to Discuss Digital Sovereignty, AI, and Infrastructure in Brasília">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://telesintese.com.br/wp-content/uploads/2024/11/RNP-anuncia-novas-chamadas-publicas-para-projetos-de-blockchain-no-Brasil.png" alt="RNP Forum to Discuss Digital Sovereignty, AI, and Infrastructure in Brasília" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">mention</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">TeleSíntese &bull; June 22, 2026</div>
+      <h2 class="media-title">RNP Forum to Discuss Digital Sovereignty, AI, and Infrastructure in Brasília</h2>
+      <p class="media-desc">Coverage of the annual Rede Nacional de Ensino e Pesquisa (RNP) Forum, highlighting panels on ethical AI development, sovereign digital infrastructure, and national scientific connectivity.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/YY7DRvLbDDg" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: HALLISON PAZ (PhD at IMPA) - Papinho Tech #137">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/YY7DRvLbDDg/maxresdefault.jpg" alt="HALLISON PAZ (PhD at IMPA) - Papinho Tech #137" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">1h 44m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Papinho Tech &bull; January 26, 2026</div>
+      <h2 class="media-title">HALLISON PAZ (PhD at IMPA) - Papinho Tech #137</h2>
+      <p class="media-desc">In-depth technical interview discussing research at IMPA, visual computing, doctoral exchange work on neural avatars at Meta Reality Labs, and technical communication in software engineering.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.techtudo.com.br/noticias/2025/12/apos-a-ia-e-possivel-ainda-ser-criativo-especialistas-discutem-o-tema-voices25.ghtml" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: After AI, Is It Still Possible to Be Creative? Experts Discuss the Topic">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://s2-techtudo.glbimg.com/vVEdcyP7udCFbzKQIOKnqfrzW9w=/0x0:1440x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/g/R/yn2RPgREeP98GmKgBapw/sistemas-de-assistencia-ao-motorista-16-.jpg" alt="After AI, Is It Still Possible to Be Creative? Experts Discuss the Topic" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">article</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">TechTudo (Globo) &bull; December 11, 2025</div>
+      <h2 class="media-title">After AI, Is It Still Possible to Be Creative? Experts Discuss the Topic</h2>
+      <p class="media-desc">Analysis and commentary alongside creative industry experts exploring the boundaries between generative artificial intelligence, human authorship, and creative agency.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://blog.youtube/intl/pt-br/news-and-events/relatorio-impacto-yt2025-br/" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: YouTube Brazil Impact Report 2024">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Creditos_Manu_Quinalha_244.jpeg" alt="YouTube Brazil Impact Report 2024" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">article</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">YouTube Official Blog &bull; October 15, 2025</div>
+      <h2 class="media-title">YouTube Brazil Impact Report 2024</h2>
+      <p class="media-desc">Featured in YouTube&#39;s national socioeconomic impact report highlighting creators using the platform to advance STEM education, digital literacy, and public science communication in Brazil.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/52RABaL0DfI" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: NEGROS EM FOCO | Black Presence in Artificial Intelligence">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/52RABaL0DfI/maxresdefault.jpg" alt="NEGROS EM FOCO | Black Presence in Artificial Intelligence" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">26m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">TV Cultura &bull; September 03, 2025</div>
+      <h2 class="media-title">NEGROS EM FOCO | Black Presence in Artificial Intelligence</h2>
+      <p class="media-desc">Television broadcast interview exploring the societal impacts of generative AI, racial equity across the tech landscape, ethics, and regulatory frameworks for synthetic media.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/51wUC8Qdqs8" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Episode #23 | The Mathematics of Sports Betting Platforms">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/51wUC8Qdqs8/maxresdefault.jpg" alt="Episode #23 | The Mathematics of Sports Betting Platforms" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">46m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">FTD Educação (Resenha) &bull; May 26, 2025</div>
+      <h2 class="media-title">Episode #23 | The Mathematics of Sports Betting Platforms</h2>
+      <p class="media-desc">Educational breakdown of the underlying probability models, house-edge algorithmic mechanics, and public risks behind online sports gambling platforms (&#39;bets&#39;).</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/R0NFKfZND_4" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Episode #17 | Digital Images and Mathematics: How Technology Uses Functions and Matrices">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/R0NFKfZND_4/maxresdefault.jpg" alt="Episode #17 | Digital Images and Mathematics: How Technology Uses Functions and Matrices" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">45m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">FTD Educação (Resenha) &bull; November 04, 2024</div>
+      <h2 class="media-title">Episode #17 | Digital Images and Mathematics: How Technology Uses Functions and Matrices</h2>
+      <p class="media-desc">Educational interview breaking down the mathematics behind computer graphics and digital imaging—covering pixel matrices, RGB color spaces, mathematical functions, and the foundations of computer vision.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/LlViXGHjTpE" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Multiresolution Image Representation Using Neural Networks">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/LlViXGHjTpE/hqdefault.jpg" alt="Multiresolution Image Representation Using Neural Networks" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">1h 19m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">ICMC TV - Understanding DL 2024 (USP São Carlos) &bull; October 16, 2024</div>
+      <h2 class="media-title">Multiresolution Image Representation Using Neural Networks</h2>
+      <p class="media-desc">Invited lecture at USP&#39;s Understanding Deep Learning 2024 seminar presenting doctoral research results on implicit neural representations, multiresolution signal decomposition, and periodic activation functions.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/X01dE5MmAjk" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Filtering Life&#39;s Noise Better Than a Diffusion Model">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/X01dE5MmAjk/maxresdefault.jpg" alt="Filtering Life&#39;s Noise Better Than a Diffusion Model" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">1h 22m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">32ª SECComp (UFSCar) &bull; October 05, 2024</div>
+      <h2 class="media-title">Filtering Life&#39;s Noise Better Than a Diffusion Model</h2>
+      <p class="media-desc">Closing keynote at SECComp exploring generative diffusion model intuition as a metaphor for decision-making, navigating career pivots, and handling noise across academic and engineering paths.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/OHfA0aUNcHQ" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: 2nd Season • Hallison Paz">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/OHfA0aUNcHQ/maxresdefault.jpg" alt="2nd Season • Hallison Paz" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">podcast</span>
+      
+      <span class="media-duration-badge">53m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Rafa Cast &bull; May 20, 2024</div>
+      <h2 class="media-title">2nd Season • Hallison Paz</h2>
+      <p class="media-desc">Conversational podcast episode with Rafael Amorim covering visual computing foundations, graduate research workflows at IMPA, and balancing STEM outreach via Programação Dinâmica.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/_ZtQ0-tDwbY" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Prototyping Ideas: Developing Solutions with Artificial Intelligence">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/_ZtQ0-tDwbY/maxresdefault.jpg" alt="Prototyping Ideas: Developing Solutions with Artificial Intelligence" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">2h 31m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Google AI Developers LatAm &bull; November 09, 2023</div>
+      <h2 class="media-title">Prototyping Ideas: Developing Solutions with Artificial Intelligence</h2>
+      <p class="media-desc">Developer session hosted at Google São Paulo focusing on applied machine learning workflows, foundation models, and prototyping practical AI-driven software architectures.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://mundonegro.inf.br/5-influenciadores-negros-em-ti-para-voce-conhecer/" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: 5 Black Tech Creators and Influencers You Should Know">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_Mundo_Negro.png?utm_source=pt.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="5 Black Tech Creators and Influencers You Should Know" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">article</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Mundo Negro &bull; June 25, 2023</div>
+      <h2 class="media-title">5 Black Tech Creators and Influencers You Should Know</h2>
+      <p class="media-desc">Editorial feature spotlighting prominent Black technologists and creators in Brazil promoting digital inclusion, computer programming, and representative leadership across STEM.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/00rJPgQkLdM" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Does Unbiased Artificial Intelligence Exist? A Discussion on Algorithms and Unconscious Bias">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/00rJPgQkLdM/maxresdefault.jpg" alt="Does Unbiased Artificial Intelligence Exist? A Discussion on Algorithms and Unconscious Bias" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">1h 10m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Itaú Unibanco (Festival de Produtos) &bull; May 07, 2023</div>
+      <h2 class="media-title">Does Unbiased Artificial Intelligence Exist? A Discussion on Algorithms and Unconscious Bias</h2>
+      <p class="media-desc">Joint keynote with Kizzy Terra exploring algorithmic fairness, data representation, and the mathematical and societal dimensions of unconscious bias in modern machine learning models.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/V7Rwru7rjKg" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Placing a Brick in the Metaverse">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/V7Rwru7rjKg/hqdefault.jpg" alt="Placing a Brick in the Metaverse" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">1h 10m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">VISGRAF Lab Webinars (IMPA) &bull; March 16, 2023</div>
+      <h2 class="media-title">Placing a Brick in the Metaverse</h2>
+      <p class="media-desc">Webinar seminar recounting research internship experience at Meta Reality Labs in Pittsburgh, examining photorealistic Codec Avatars, neural rendering architectures, and volumetric pipelines.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://startups.com.br/artigo/alforriah-de-kizzy-terra-e-allison-paz-avanca-com-mentoria-em-ciencia-de-dados-e-ia-humanizada/" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Alforriah Advances with Mentorship in Data Science and Humanized AI">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://startups.com.br/wp-content/uploads/2022/02/1200x6756.webp" alt="Alforriah Advances with Mentorship in Data Science and Humanized AI" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">article</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Startups.com.br &bull; February 09, 2022</div>
+      <h2 class="media-title">Alforriah Advances with Mentorship in Data Science and Humanized AI</h2>
+      <p class="media-desc">Profile on the educational and consulting venture co-founded with Kizzy Terra, spotlighting initiatives in human-centered AI education, data mentorship, and professional capacity building.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://porvir.org/matematica-metaverso-dia-a-dia/" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Mathematics, Metaverse, and Daily Life: Connecting Theory to the Real World">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://porvir.org/wp-content/themes/inketa/images/navbar-brand.png" alt="Mathematics, Metaverse, and Daily Life: Connecting Theory to the Real World" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">article</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Porvir &bull; December 10, 2021</div>
+      <h2 class="media-title">Mathematics, Metaverse, and Daily Life: Connecting Theory to the Real World</h2>
+      <p class="media-desc">Educational feature discussing how immersive graphics, metaverse technologies, and spatial computing connect abstract mathematical curricula to everyday applications for students.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/m9X_PzJXMC4" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Challenges of AI Education in Brazil">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/m9X_PzJXMC4/maxresdefault.jpg" alt="Challenges of AI Education in Brazil" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">Keynote Talk</span>
+      
+      <span class="media-duration-badge">1h 10m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Python Brasil 2021 &bull; October 24, 2021</div>
+      <h2 class="media-title">Challenges of AI Education in Brazil</h2>
+      <p class="media-desc">Opening keynote at Brazil&#39;s national Python conference sharing community stories, social mobility through STEM education, and building open technical knowledge networks.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/kd0V7JM7Q9g" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Those Who Learn Like a Robot Can Be Replaced by a Robot">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/kd0V7JM7Q9g/maxresdefault.jpg" alt="Those Who Learn Like a Robot Can Be Replaced by a Robot" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">talk</span>
+      
+      <span class="media-duration-badge">1h 04m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">10ª SECComp - IF Sudeste MG (Rio Pomba) &bull; October 23, 2021</div>
+      <h2 class="media-title">Those Who Learn Like a Robot Can Be Replaced by a Robot</h2>
+      <p class="media-desc">Joint keynote presentation with Kizzy Terra exploring industrial automation, critical thinking vs. rote learning, and educational strategies to stay resilient against AI displacement.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/0MB-RDAl7a8" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Episode 039: Pizza Dinâmica">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/0MB-RDAl7a8/maxresdefault.jpg" alt="Episode 039: Pizza Dinâmica" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">podcast</span>
+      
+      <span class="media-duration-badge">55m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Pizza de Dados &bull; October 04, 2021</div>
+      <h2 class="media-title">Episode 039: Pizza Dinâmica</h2>
+      <p class="media-desc">Guest appearance on Brazil&#39;s leading data science podcast with Kizzy Terra, detailing academic paths through IME and IMPA, open science dissemination, and creating community tech education.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/NZ4KluZMEoU" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Stack Talk with Kizzy and Hallison from @pgdinamica">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/NZ4KluZMEoU/maxresdefault.jpg" alt="Stack Talk with Kizzy and Hallison from @pgdinamica" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">59m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Bruno Germano &bull; October 13, 2020</div>
+      <h2 class="media-title">Stack Talk with Kizzy and Hallison from @pgdinamica</h2>
+      <p class="media-desc">Tech career livestream covering software development routines, graduate research at IMPA, transitioning from engineering to content creation, and mobile architecture projects.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://www.youtube.com/live/hpsbLoZkLPI" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Programming for Everyone ft. Programação Dinâmica">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/hpsbLoZkLPI/maxresdefault.jpg" alt="Programming for Everyone ft. Programação Dinâmica" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">livestream</span>
+      
+      <span class="media-duration-badge">1h 11m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Física e Afins &bull; August 30, 2020</div>
+      <h2 class="media-title">Programming for Everyone ft. Programação Dinâmica</h2>
+      <p class="media-desc">Live broadcast with physicist Bibi Bailas on broadening access to computer science education, bridging computer engineering with pure mathematics, and diversity across STEM.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://icmc.usp.br/noticias/4992-evento-online-discute-como-levar-a-ciencia-de-dados-para-a-sala-de-aula" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Online Event Discusses How to Bring Data Science into the Classroom">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://icmc.usp.br/imprensa/4992/_thumb1/evento-online-discute-como-levar-a-ciencia-de-dados-para-a-sala-de-aula.jpg" alt="Online Event Discusses How to Bring Data Science into the Classroom" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">mention</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">ICMC - USP São Carlos &bull; July 24, 2020</div>
+      <h2 class="media-title">Online Event Discusses How to Bring Data Science into the Classroom</h2>
+      <p class="media-desc">Institutional coverage of USP&#39;s university workshop on methodologies and open tools for introducing foundational data science and computational thinking to secondary education.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="https://youtu.be/31mAFbYx5vM" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: Inside IME: Engineering, Routine, and Academic Pathways">
+    <div class="media-thumbnail-wrapper">
+      <img src="https://img.youtube.com/vi/31mAFbYx5vM/maxresdefault.jpg" alt="Inside IME: Engineering, Routine, and Academic Pathways" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">interview</span>
+      
+      <span class="media-duration-badge">56m</span>
+      
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">Edward Física &bull; July 12, 2020</div>
+      <h2 class="media-title">Inside IME: Engineering, Routine, and Academic Pathways</h2>
+      <p class="media-desc">Interview breaking down preparation for elite military engineering exams, life inside Instituto Militar de Engenharia (IME), and early computer graphics projects.</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  
+</div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-wrapper">
+      <div class="footer-left">
+        <p>&copy; 2026 Hallison Paz &bull; All rights reserved.</p>
+        <p class="footer-tagline">Built with an explicit Python static site generator.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://scholar.google.com.br/citations?hl=en&amp;user=Lb2XwsYAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://github.com/hallpaz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://youtube.com/@programacaodinamica" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://twitter.com/hallpaz" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="/feed.xml" target="_blank" rel="noopener noreferrer">RSS Feed</a>
+        <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="/static/js/theme-toggle.js"></script>
+</body>
+</html>
