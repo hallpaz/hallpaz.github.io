@@ -1,0 +1,229 @@
+- type: "mention"
+  title: "RNP Forum to Discuss Digital Sovereignty, AI, and Infrastructure in Brasília"
+  source: "TeleSíntese"
+  language: "Portuguese"
+  date: 2026-06-22
+  description: "Coverage of the annual Rede Nacional de Ensino e Pesquisa (RNP) Forum, highlighting panels on ethical AI development, sovereign digital infrastructure, and national scientific connectivity."
+  url: "https://telesintese.com.br/forum-da-rnp-discutira-soberania-digital-ia-e-infraestrutura-em-brasilia/"
+  thumbnail: https://telesintese.com.br/wp-content/uploads/2024/11/RNP-anuncia-novas-chamadas-publicas-para-projetos-de-blockchain-no-Brasil.png
+
+- type: "interview"
+  title: "HALLISON PAZ (PhD at IMPA) - Papinho Tech #137"
+  source: "Papinho Tech"
+  language: "Portuguese"
+  date: 2026-01-26
+  duration: "1h 44m"
+  description: "In-depth technical interview discussing research at IMPA, visual computing, doctoral exchange work on neural avatars at Meta Reality Labs, and technical communication in software engineering."
+  url: "https://youtu.be/YY7DRvLbDDg"
+  thumbnail: "https://img.youtube.com/vi/YY7DRvLbDDg/maxresdefault.jpg"
+
+# 2025
+- type: "article"
+  title: "After AI, Is It Still Possible to Be Creative? Experts Discuss the Topic"
+  source: "TechTudo (Globo)"
+  language: "Portuguese"
+  date: 2025-12-11
+  description: "Analysis and commentary alongside creative industry experts exploring the boundaries between generative artificial intelligence, human authorship, and creative agency."
+  url: "https://www.techtudo.com.br/noticias/2025/12/apos-a-ia-e-possivel-ainda-ser-criativo-especialistas-discutem-o-tema-voices25.ghtml"
+  thumbnail: https://s2-techtudo.glbimg.com/vVEdcyP7udCFbzKQIOKnqfrzW9w=/0x0:1440x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/g/R/yn2RPgREeP98GmKgBapw/sistemas-de-assistencia-ao-motorista-16-.jpg
+
+- type: "article"
+  title: "YouTube Brazil Impact Report 2024"
+  source: "YouTube Official Blog"
+  language: "Portuguese"
+  date: 2025-10-15
+  description: "Featured in YouTube's national socioeconomic impact report highlighting creators using the platform to advance STEM education, digital literacy, and public science communication in Brazil."
+  url: "https://blog.youtube/intl/pt-br/news-and-events/relatorio-impacto-yt2025-br/"
+  thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Creditos_Manu_Quinalha_244.jpeg
+
+- type: "interview"
+  title: "NEGROS EM FOCO | Black Presence in Artificial Intelligence"
+  source: "TV Cultura"
+  language: "Portuguese"
+  date: 2025-09-03
+  duration: "26m"
+  description: "Television broadcast interview exploring the societal impacts of generative AI, racial equity across the tech landscape, ethics, and regulatory frameworks for synthetic media."
+  url: "https://youtu.be/52RABaL0DfI"
+  thumbnail: "https://img.youtube.com/vi/52RABaL0DfI/maxresdefault.jpg"
+
+- type: "interview"
+  title: "Episode #23 | The Mathematics of Sports Betting Platforms"
+  source: "FTD Educação (Resenha)"
+  language: "Portuguese"
+  date: 2025-05-26
+  duration: "46m"
+  description: "Educational breakdown of the underlying probability models, house-edge algorithmic mechanics, and public risks behind online sports gambling platforms ('bets')."
+  url: "https://youtu.be/51wUC8Qdqs8"
+  thumbnail: "https://img.youtube.com/vi/51wUC8Qdqs8/maxresdefault.jpg"
+
+# 2024
+
+- type: "interview"
+  title: "Episode #17 | Digital Images and Mathematics: How Technology Uses Functions and Matrices"
+  source: "FTD Educação (Resenha)"
+  language: "Portuguese"
+  date: 2024-11-04
+  duration: "45m"
+  description: "Educational interview breaking down the mathematics behind computer graphics and digital imaging—covering pixel matrices, RGB color spaces, mathematical functions, and the foundations of computer vision."
+  url: "https://youtu.be/R0NFKfZND_4"
+  thumbnail: "https://img.youtube.com/vi/R0NFKfZND_4/maxresdefault.jpg"
+
+- type: "talk"
+  title: "Multiresolution Image Representation Using Neural Networks"
+  source: "ICMC TV - Understanding DL 2024 (USP São Carlos)"
+  language: "Portuguese"
+  date: 2024-10-16
+  duration: "1h 19m"
+  description: "Invited lecture at USP's Understanding Deep Learning 2024 seminar presenting doctoral research results on implicit neural representations, multiresolution signal decomposition, and periodic activation functions."
+  url: "https://www.youtube.com/live/LlViXGHjTpE"
+  thumbnail: "https://img.youtube.com/vi/LlViXGHjTpE/hqdefault.jpg"
+
+- type: "talk"
+  title: "Filtering Life's Noise Better Than a Diffusion Model"
+  source: "32ª SECComp (UFSCar)"
+  language: "Portuguese"
+  date: 2024-10-05
+  duration: "1h 22m"
+  description: "Closing keynote at SECComp exploring generative diffusion model intuition as a metaphor for decision-making, navigating career pivots, and handling noise across academic and engineering paths."
+  url: "https://www.youtube.com/live/X01dE5MmAjk"
+  thumbnail: "https://img.youtube.com/vi/X01dE5MmAjk/maxresdefault.jpg"
+
+- type: "podcast"
+  title: "2nd Season • Hallison Paz"
+  source: "Rafa Cast"
+  language: "Portuguese"
+  date: 2024-05-20
+  duration: "53m"
+  description: "Conversational podcast episode with Rafael Amorim covering visual computing foundations, graduate research workflows at IMPA, and balancing STEM outreach via Programação Dinâmica."
+  url: "https://youtu.be/OHfA0aUNcHQ"
+  thumbnail: "https://img.youtube.com/vi/OHfA0aUNcHQ/maxresdefault.jpg"
+
+# 2023
+- type: "talk"
+  title: "Prototyping Ideas: Developing Solutions with Artificial Intelligence"
+  source: "Google AI Developers LatAm"
+  language: "Portuguese"
+  date: 2023-11-09
+  duration: "2h 31m"
+  description: "Developer session hosted at Google São Paulo focusing on applied machine learning workflows, foundation models, and prototyping practical AI-driven software architectures."
+  url: "https://www.youtube.com/live/_ZtQ0-tDwbY"
+  thumbnail: "https://img.youtube.com/vi/_ZtQ0-tDwbY/maxresdefault.jpg"
+
+- type: "article"
+  title: "5 Black Tech Creators and Influencers You Should Know"
+  source: "Mundo Negro"
+  language: "Portuguese"
+  date: 2023-06-25
+  description: "Editorial feature spotlighting prominent Black technologists and creators in Brazil promoting digital inclusion, computer programming, and representative leadership across STEM."
+  url: "https://mundonegro.inf.br/5-influenciadores-negros-em-ti-para-voce-conhecer/"
+  thumbnail: https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_Mundo_Negro.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original
+
+- type: "talk"
+  title: "Does Unbiased Artificial Intelligence Exist? A Discussion on Algorithms and Unconscious Bias"
+  source: "Itaú Unibanco (Festival de Produtos)"
+  language: "Portuguese"
+  date: 2023-05-07
+  duration: "1h 10m"
+  description: "Joint keynote with Kizzy Terra exploring algorithmic fairness, data representation, and the mathematical and societal dimensions of unconscious bias in modern machine learning models."
+  url: "https://youtu.be/00rJPgQkLdM"
+  thumbnail: "https://img.youtube.com/vi/00rJPgQkLdM/maxresdefault.jpg"
+
+- type: "talk"
+  title: "Placing a Brick in the Metaverse"
+  source: "VISGRAF Lab Webinars (IMPA)"
+  language: "Portuguese"
+  date: 2023-03-16
+  duration: "1h 10m"
+  description: "Webinar seminar recounting research internship experience at Meta Reality Labs in Pittsburgh, examining photorealistic Codec Avatars, neural rendering architectures, and volumetric pipelines."
+  url: "https://www.youtube.com/live/V7Rwru7rjKg"
+  thumbnail: "https://img.youtube.com/vi/V7Rwru7rjKg/hqdefault.jpg"
+
+# 2022
+- type: "article"
+  title: "Alforriah Advances with Mentorship in Data Science and Humanized AI"
+  source: "Startups.com.br"
+  language: "Portuguese"
+  date: 2022-02-09
+  description: "Profile on the educational and consulting venture co-founded with Kizzy Terra, spotlighting initiatives in human-centered AI education, data mentorship, and professional capacity building."
+  url: "https://startups.com.br/artigo/alforriah-de-kizzy-terra-e-allison-paz-avanca-com-mentoria-em-ciencia-de-dados-e-ia-humanizada/"
+  thumbnail: https://startups.com.br/wp-content/uploads/2022/02/1200x6756.webp
+
+# 2021
+- type: "article"
+  title: "Mathematics, Metaverse, and Daily Life: Connecting Theory to the Real World"
+  source: "Porvir"
+  language: "Portuguese"
+  date: 2021-12-10
+  description: "Educational feature discussing how immersive graphics, metaverse technologies, and spatial computing connect abstract mathematical curricula to everyday applications for students."
+  url: "https://porvir.org/matematica-metaverso-dia-a-dia/"
+  thumbnail: https://porvir.org/wp-content/themes/inketa/images/navbar-brand.png
+
+- type: "talk"
+  title: "Those Who Learn Like a Robot Can Be Replaced by a Robot"
+  source: "10ª SECComp - IF Sudeste MG (Rio Pomba)"
+  language: "Portuguese"
+  date: 2021-10-23
+  duration: "1h 04m"
+  description: "Joint keynote presentation with Kizzy Terra exploring industrial automation, critical thinking vs. rote learning, and educational strategies to stay resilient against AI displacement."
+  url: "https://www.youtube.com/live/kd0V7JM7Q9g"
+  thumbnail: "https://img.youtube.com/vi/kd0V7JM7Q9g/maxresdefault.jpg"
+
+- type: "Keynote Talk"
+  title: "Challenges of AI Education in Brazil"
+  source: "Python Brasil 2021"
+  language: "Portuguese"
+  date: 2021-10-24
+  duration: "1h 10m"
+  description: "Opening keynote at Brazil's national Python conference sharing community stories, social mobility through STEM education, and building open technical knowledge networks."
+  url: "https://youtu.be/m9X_PzJXMC4"
+  thumbnail: "https://img.youtube.com/vi/m9X_PzJXMC4/maxresdefault.jpg"
+
+- type: "podcast"
+  title: "Episode 039: Pizza Dinâmica"
+  source: "Pizza de Dados"
+  language: "Portuguese"
+  date: 2021-10-04
+  duration: "55m"
+  description: "Guest appearance on Brazil's leading data science podcast with Kizzy Terra, detailing academic paths through IME and IMPA, open science dissemination, and creating community tech education."
+  url: "https://youtu.be/0MB-RDAl7a8"
+  thumbnail: "https://img.youtube.com/vi/0MB-RDAl7a8/maxresdefault.jpg"
+
+# 2020
+- type: "interview"
+  title: "Stack Talk with Kizzy and Hallison from @pgdinamica"
+  source: "Bruno Germano"
+  language: "Portuguese"
+  date: 2020-10-13
+  duration: "59m"
+  description: "Tech career livestream covering software development routines, graduate research at IMPA, transitioning from engineering to content creation, and mobile architecture projects."
+  url: "https://www.youtube.com/live/NZ4KluZMEoU"
+  thumbnail: "https://img.youtube.com/vi/NZ4KluZMEoU/maxresdefault.jpg"
+
+- type: "livestream"
+  title: "Programming for Everyone ft. Programação Dinâmica"
+  source: "Física e Afins"
+  language: "Portuguese"
+  date: 2020-08-30
+  duration: "1h 11m"
+  description: "Live broadcast with physicist Bibi Bailas on broadening access to computer science education, bridging computer engineering with pure mathematics, and diversity across STEM."
+  url: "https://www.youtube.com/live/hpsbLoZkLPI"
+  thumbnail: "https://img.youtube.com/vi/hpsbLoZkLPI/maxresdefault.jpg"
+
+- type: "mention"
+  title: "Online Event Discusses How to Bring Data Science into the Classroom"
+  source: "ICMC - USP São Carlos"
+  language: "Portuguese"
+  date: 2020-07-24
+  description: "Institutional coverage of USP's university workshop on methodologies and open tools for introducing foundational data science and computational thinking to secondary education."
+  url: "https://icmc.usp.br/noticias/4992-evento-online-discute-como-levar-a-ciencia-de-dados-para-a-sala-de-aula"
+  thumbnail: https://icmc.usp.br/imprensa/4992/_thumb1/evento-online-discute-como-levar-a-ciencia-de-dados-para-a-sala-de-aula.jpg
+
+- type: "interview"
+  title: "Inside IME: Engineering, Routine, and Academic Pathways"
+  source: "Edward Física"
+  language: "Portuguese"
+  date: 2020-07-12
+  duration: "56m"
+  description: "Interview breaking down preparation for elite military engineering exams, life inside Instituto Militar de Engenharia (IME), and early computer graphics projects."
+  url: "https://youtu.be/31mAFbYx5vM"
+  thumbnail: "https://img.youtube.com/vi/31mAFbYx5vM/maxresdefault.jpg"

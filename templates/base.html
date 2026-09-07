@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.site_name }} | {{ config.tagline }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+  <meta name="author" content="{{ config.site_name }}">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="{% block og_title %}{{ config.site_name }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ config.description }}{% endblock %}">
+  <meta property="og:type" content="website">
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+
+  <!-- KaTeX client-side math rendering (auto-render, skipping pre and code) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      throwOnError: false
+    });">
+  </script>
+
+  <!-- Early theme script to prevent FOUC -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('hallpaz-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  {% include "partials/nav.html" %}
+
+  <main class="main-content">
+    <div class="site-container">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  <script src="/static/js/theme-toggle.js"></script>
+</body>
+</html>

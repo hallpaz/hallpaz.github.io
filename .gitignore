@@ -10,3 +10,8 @@ Gemfile.lock
 assets/libs/
 node_modules/
 vendor
+dist/
+__pycache__/
+*.pyc
+.venv/
+.env

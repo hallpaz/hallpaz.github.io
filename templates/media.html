@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Media &amp; Talks | {{ config.site_name }}{% endblock %}
+
+{% block content %}
+<div class="section-header">
+  <h1 class="section-title">Media &amp; Talks</h1>
+  <p class="section-subtitle">Podcasts, invited conference keynotes, panel discussions, and educational video productions.</p>
+</div>
+
+<div class="media-grid">
+  {% for item in media_items %}
+  <a href="{{ item.url }}" class="media-card" target="_blank" rel="noopener noreferrer" aria-label="Watch: {{ item.title }}">
+    <div class="media-thumbnail-wrapper">
+      <img src="{{ item.thumbnail }}" alt="{{ item.title }}" class="media-thumbnail" loading="lazy">
+      <span class="media-type-badge">{{ item.type }}</span>
+      {% if item.duration is defined and item.duration %}
+      <span class="media-duration-badge">{{ item.duration }}</span>
+      {% endif %}
+    </div>
+
+    <div class="media-content">
+      <div class="media-source">{{ item.source }} &bull; {{ item.date_str }}</div>
+      <h2 class="media-title">{{ item.title }}</h2>
+      <p class="media-desc">{{ item.description }}</p>
+
+      <div class="media-action">
+        <span class="media-link-btn">
+          Watch / Listen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

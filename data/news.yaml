@@ -1,0 +1,47 @@
+- date: 2026-09-01
+  tag: "New Position"
+  title: "Joined École Polytechnique as a Postdoctoral Researcher"
+  body: "I have joined the Centre de Mathématiques Appliquées (CMAP) de l'École Polytechnique to work on adversarial machine learning and robust learning with El Mahdi El Mhamdi's group."
+  link: null
+
+- date: 2026-08-30
+  tag: "Milestone"
+  title: "Ran my 1st 10K road race 🥇"
+  body: ""
+  link: null
+
+- date: 2026-08-27
+  tag: "Talk"
+  title: "Keynote Speaker at Fórum RNP 2026"
+  body: "Delivered an invited talk at the biggest event of Brazil's National Network of Education and Research, discussing how digital sovereignty starts with the people."
+  link: "https://youtu.be/sElDmXcVl5A"
+
+- date: 2026-04-26
+  tag: "Conference"
+  title: "Attended ICLR 2026 in Rio de Janeiro"
+  body: ""
+  link: null
+
+- date: 2025-02-25
+  tag: "New Position"
+  title: "Joined Hand Talk by Sorenson"
+  body: "I have joined Hand Talk as a Research Scientist to work on sign language translation models."
+  link: null
+
+- date: 2024-11-25
+  tag: "Milestone"
+  title: "Successfully Defended Ph.D. Thesis at IMPA"
+  body: "Defended my doctoral thesis in Multiresolution Spectral Representation of Neural Media at Instituto de Matemática Pura e Aplicada (IMPA) in Rio de Janeiro, advised by Luiz Velho."
+  link: null
+
+- date: 2024-08-17
+  tag: "Outreach"
+  title: "Programação Dinâmica Reaches 200,000 Subscribers"
+  body: "Our science communication project Programação Dinâmica surpassed 200K subscribers, continuing our mission of delivering accessible machine learning, data science, and mathematics education."
+  link: "https://youtube.com/@programacaodinamica"
+
+- date: 2024-07-27
+  tag: "Conference"
+  title: "I’m glad to be in Denver presenting my poster Spectral Periodic Networks for Neural Rendering at SIGGRAPH!"
+  body: ""
+  link: null

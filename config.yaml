@@ -1,0 +1,53 @@
+site_name: "Hallison Paz"
+tagline: "Machine Learning Researcher & Science Communicator"
+role: "Postdoctoral Researcher at École Polytechnique (LIX) | Ph.D. IMPA"
+email: "hallison.paz@polytechnique.edu"
+location: "Paris, France & Rio de Janeiro, Brazil"
+base_url: "https://hallpaz.github.io"
+description: "Personal academic website of Hallison Paz. Research in adversarial machine learning."
+
+nav:
+  - title: "About"
+    url: "/"
+  - title: "Publications"
+    url: "/publications/"
+  - title: "Teaching"
+    url: "/teaching/"
+  - title: "Media"
+    url: "/media/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "News"
+    url: "/news/"
+
+socials:
+  scholar: "https://scholar.google.com.br/citations?hl=en&user=Lb2XwsYAAAAJ"
+  github: "https://github.com/hallpaz"
+  youtube: "https://youtube.com/@programacaodinamica"
+  linkedin: "https://linkedin.com/in/hallpaz"
+  twitter: "https://twitter.com/hallpaz"
+  orcid: "https://orcid.org/0009-0006-4867-1809"
+
+default_lang: "en"
+
+news_categories:
+  - name: "career"
+    match: ["New Position", "Milestone"]
+    dark: "#e8c547"
+    light: "#a67c3d"
+  - name: "presentation"
+    match: ["Conference", "Symposium", "Colloquium", "Workshop"]
+    dark: "#4fb8c4"
+    light: "#3d7a80"
+  - name: "publication"
+    match: ["Journal", "Publication", "Preprint"]
+    dark: "#5b8dd9"
+    light: "#3a5f8f"
+  - name: "outreach"
+    match: ["Outreach"]
+    dark: "#d97757"
+    light: "#b5562f"
+  - name: "talk"
+    match: ["Talk", "Keynote"]
+    dark: "#a78bd8"
+    light: "#6b5490"

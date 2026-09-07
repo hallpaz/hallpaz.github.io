@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}News &amp; Updates | {{ config.site_name }}{% endblock %}
+
+{% block content %}
+<div class="section-header">
+  <h1 class="section-title">News &amp; Milestones</h1>
+  <p class="section-subtitle">Timeline of research announcements, presentations, and other important events
+    of my (not so) academic life.</p>
+</div>
+
+<div class="timeline">
+  {% for item in news_items %}
+  <div class="timeline-item" id="news-{{ loop.index }}">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <span class="timeline-date">{{ item.date_str }}</span>
+        <span class="badge{% if item.category %} badge-cat-{{ item.category }}{% endif %}" {% if item.color_dark and
+          item.color_light %} style="--cat-dark: {{ item.color_dark }}; --cat-light: {{ item.color_light }};" {% endif
+          %}>{{ item.tag }}</span>
+      </div>
+      <h2 class="timeline-title">
+        {% if item.link %}
+        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }} &rarr;</a>
+        {% else %}
+        {{ item.title }}
+        {% endif %}
+      </h2>
+      <p class="timeline-body">{{ item.body }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

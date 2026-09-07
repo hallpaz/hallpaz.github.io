@@ -1,0 +1,205 @@
+- title: "The Lips, the Teeth, the tip of the Tongue: LTT Tracking"
+  authors: ["Feisal Rasras", "Stanislav Pidhorskyi", "Tomas Simon", "Hallison Paz", "Hongsheng Wen", "Jason Saragih", "Javier Romero"]
+  me: "Hallison Paz"
+  venue: "SIGGRAPH Asia 2024"
+  date: 2024-12-03
+  abstract: "A mesh-based generative model of the inner-mouth system is presented, which includes teeth and gums for the upper and lower jaw, the tongue, and their placement inside the human head. The model is capable of capturing person-specific detail, enabling the creation of highly accurate avatars that exceed the quality of prior mesh-based representations."
+  image: "/static/images/pubs/ltt-tracking.png"
+  links:
+    project: "https://sa2024.siggraph.org"
+    paper: "https://dl.acm.org/doi/pdf/10.1145/3680528.3687691"
+    bibtex: |
+      @inproceedings{10.1145/3680528.3687691,
+      author = {Rasras, Feisal and Pidhorskyi, Stanislav and Simon, Tomas and Paz, Hallison and Wen, He and Saragih, Jason and Romero, Javier},
+      title = {The Lips, the Teeth, the tip of the Tongue: LTT Tracking},
+      year = {2024},
+      isbn = {9798400711312},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3680528.3687691},
+      doi = {10.1145/3680528.3687691},
+      abstract = {A mesh-based generative model of the inner-mouth system is presented, which includes teeth and gums for the upper and lower jaw, the tongue, and their placement inside the human head. The model is capable of capturing person-specific detail, enabling the creation of highly accurate avatars that exceed the quality of prior mesh-based representations. The method combines data from oral scans and facial performances captured in a multi-camera capture rig. The system employs a precise segmentation model that can differentiate complex tongue motion. A novel inverse-rendering formulation is used in a staged modeling procedure, producing accurate registration of tongue, teeth, and jaw. The system is demonstrated on novel held-out subjects, where we demonstrate highly accurate reconstructions that exceed prior mesh-based avatar representations.},
+      booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+      articleno = {115},
+      numpages = {11},
+      keywords = {Facial Tracking, Tongue Model, Universal Teeth Model, Jaw Skinning, Head Stabilization.},
+      location = {Tokyo, Japan},
+      series = {SA '24}
+      }
+
+- title: "Spectral Periodic Networks for Neural Rendering"
+  authors: ["Hallison Paz", "Tiago Novello", "Luiz Velho"]
+  me: "Hallison Paz"
+  venue: "ACM SIGGRAPH Posters 2024"
+  date: 2024-07-28
+  abstract: "We present an implicit neural representation to describe periodic signals in neural rendering. We encode attribute functions through a periodic neural network $f: \\mathbb{R}^n \\rightarrow A$, where $A$ is the attribute space. We explore two important cases in neural rendering: (a) the representation of seamless tileable texture materials and (b) the visualization of 360° spherical panoramas."
+  image: "/static/images/pubs/leopard-texture.gif"
+  links:
+    project: "https://dl.acm.org/doi/fullHtml/10.1145/3641234.3671087"
+    paper: "https://dl.acm.org/doi/pdf/10.1145/3641234.3671087"
+    bibtex: |
+      @inproceedings{10.1145/3641234.3671087,
+      author = {Paz, Hallison and Novello, Tiago and Velho, Luiz},
+      title = {Spectral Periodic Networks for Neural Rendering},
+      year = {2024},
+      isbn = {9798400705168},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3641234.3671087},
+      doi = {10.1145/3641234.3671087},
+      booktitle = {ACM SIGGRAPH 2024 Posters},
+      articleno = {47},
+      numpages = {2},
+      keywords = {Anti-aliasing, Fourier Series, Periodic Functions, Texture Mapping},
+      location = {Denver, CO, USA},
+      series = {SIGGRAPH '24}
+      }
+
+- title: "Neural implicit morphing of face images"
+  authors: ["Guilherme Schardong", "Tiago Novello", "Hallison Paz", "Iurii Medvedev", "Vinícius da Silva", "Luiz Velho", "Nuno Gonçalves"]
+  me: "Hallison Paz"
+  venue: "CVPR 2024"
+  date: 2024-06-17
+  badge: "LatinX Best Paper Award"
+  abstract: "We investigate the use of smooth neural networks for morphing face images regularized by thin-plate energy. For this, we model time as a parameter and disentangle information from blending."
+  image: "/static/images/pubs/lecunnton.gif"
+  links:
+    paper: "https://openaccess.thecvf.com/content/CVPR2024/papers/Schardong_Neural_Implicit_Morphing_of_Face_Images_CVPR_2024_paper.pdf"
+    project: "https://schardong.github.io/ifmorph/"
+    bibtex: |
+      @inproceedings{schardong2024neural,
+      title = {Neural Implicit Morphing of Face Images},
+      author = {Schardong, Guilherme and Novello, Tiago and Paz, Hallison and Medvedev, Iurii and Silva, Vin{\'\i}icius da and Velho, Luiz and Gon\c{c}alves, Nuno},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year = {2024},
+      month = {June},
+      pages = {7321-7330}
+      }
+
+- title: "MR-Net: Multiresolution sinusoidal neural networks"
+  authors: ["Hallison Paz", "Daniel Perazzo", "Tiago Novello", "Guilherme Schardong", "Luiz Schirmer", "Vinícius da Silva", "Daniel Yukimura", "Fabio Chagas", "Hélio Lopes", "Luiz Velho"]
+  me: "Hallison Paz"
+  venue: "Computers & Graphics 2023"
+  date: 2023-05-18
+  abstract: "We extend sinusoidal networks, and we build an infrastructure to train networks to represent signals in multiresolution. Our coordinate-based networks, namely L-Net, M-Net, and S-Net, are continuous both in space and in scale as they are composed of multiple stages that progressively add finer details. Our experiments show that MR-Net can reach comparable Peak Signal-to-Noise Ratio (PSNR) to other architectures, on image reconstruction, while needing fewer additional parameters for multiresolution."
+  image: "/static/images/pubs/mrnet-masp"
+  links:
+    code: "https://github.com/visgraf/mrnet"
+    project: "https://visgraf.impa.br/mrnet"
+    bibtex: |
+      @article{paz2023mrnet,
+        title={MR-Net: Multiresolution sinusoidal neural networks},
+        author={Paz, Hallison and Perazzo, Daniel and Novello, Tiago and Schardong, Guilherme and Schirmer, Luiz and da Silva, Vin{\'\i}cius and Yukimura, Daniel and Chagas, Fabio and Lopes, H{\'e}lio and Velho, Luiz},
+        journal={Computers \& Graphics},
+        volume={114},
+        pages={387--400},
+        year={2023},
+        publisher={Elsevier}
+      }
+
+
+- title: "Multiresolution neural networks for imaging"
+  authors: ["Hallison Paz", "Tiago Novello", "Vinícius da Silva", "Guilherme Schardong", "Luiz Schirmer", "Fabio Chagas", "Hélio Lopes", "Luiz Velho"]
+  me: "Hallison Paz"
+  venue: "SIBGRAPI 2022"
+  date: 2022-10-24
+  abstract: "MR-Net is a general architecture for multiresolution neural networks, and a framework for imaging applications. Our coordinate-based networks are continuous both in space and in scale as they are composed of multiple stages that progressively add finer details."
+  image: "/static/images/pubs/mr-woven.png"
+  links:
+    paper: "https://arxiv.org/abs/2208.11813"
+    project: "https://visgraf.github.io/mrnet-img/"
+    bibtex: |
+      @inproceedings{sibgrapi,
+      author = {Hallison Paz and Tiago Novello and Vinicius Silva and Guilherme Schardong and Luiz Schirmer and Fabio Chagas and Helio Lopes and Luiz Velho},
+      title = { Multiresolution Neural Networks for Imaging},
+      booktitle = {Anais da XXXV Conference on Graphics, Patterns and Images},
+      location = {Natal/RN},
+      year = {2022},
+      keywords = {},
+      publisher = {SBC},
+      address = {Porto Alegre, RS, Brasil},
+      url = {https://sol.sbc.org.br/index.php/sibgrapi/article/view/22915}
+      }
+
+
+
+- title: "Neural networks for implicit representations of 3D scenes"
+  authors: ["Luiz Schirmer", "Guilherme Schardong", "Vinícius da Silva", "Hélio Lopes", "Tiago Novello", "Daniel Yukimura", "Hallison Paz", "Luiz Velho"]
+  me: "Hallison Paz"
+  venue: "SIBGRAPI 2021"
+  date: 2021-10-18
+  abstract: "This tutorial presents methods that use neural networks for implicit representations of 3D geometry (neural implicit functions). We explore the different aspects of neural implicit functions for shape modeling and synthesis. We aim to provide a theoretical analysis of 3D shape reconstruction using deep neural networks and introduce a discussion between researchers interested in this research field."
+  image: null
+  links:
+    project: "https://lvelho.impa.br/ni3d-2021/"
+    paper: "https://lvelho.impa.br/ni3d-2021/survey.pdf"
+    bibtex: |
+      @inproceedings{schirmer2021neural,
+      author={Schirmer, Luiz and Schardong, Guilherme and da Silva, Vinícius and Lopes, Hélio and Novello, Tiago and Yukimura, Daniel and Magalhaes, Thales and Paz, Hallison and Velho, Luiz},
+      booktitle={2021 34th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)}, 
+      title={Neural Networks for Implicit Representations of 3D Scenes}, 
+      year={2021},
+      volume={},
+      number={},
+      pages={17-24},
+      keywords={Geometry;Deep learning;Three-dimensional displays;Shape;Neural networks;Image reconstruction;Neural Networks;Signal Distance Functions;Implicit Representations},
+      doi={10.1109/SIBGRAPI54419.2021.00012}
+      }
+
+
+# - title: "Multiresolution neural networks for multiscale signal representation"
+#   authors: ["Luiz Velho", "Hallison Paz", "Tiago Novello", "Daniel Yukimura"]
+#   me: "Hallison Paz"
+#   venue: "VISGRAF Technical Report 2022"
+#   date: 2022-06-01
+#   abstract: "This technical report formalizes the mathematical and architectural foundations of multiresolution coordinate-based neural networks for capturing multiscale continuous signals."
+#   image: "/static/images/pubs/multiresolution_tr_2022.jpg"
+#   links:
+#     project: "https://visgraf.impa.br"
+#     bibtex: |
+#       @techreport{velho2022multiresolution,
+#         title={Multiresolution neural networks for multiscale signal representation},
+#         author={Velho, Luiz and Paz, Hallison and Novello, Tiago and Yukimura, Daniel},
+#         institution={VISGRAF Lab, IMPA},
+#         year={2022}
+#       }
+
+
+
+
+# - title: "Implicit Neural Representation of Tileable Material Textures"
+#   authors: ["Hallison Paz", "Tiago Novello", "Luiz Velho"]
+#   me: "Hallison Paz"
+#   venue: "arXiv 2024"
+#   date: 2024-02-03
+#   abstract: "We explore sinusoidal neural networks to represent periodic tileable textures by structuring frequency layers under Fourier series principles and regularizing boundaries via Poisson equations."
+#   image: "/static/images/pubs/tileable_textures_2024.jpg"
+#   links:
+#     arxiv: "https://arxiv.org/abs/2402.02208"
+#     project: "https://visgraf.impa.br"
+#     bibtex: |
+#       @article{paz2024implicit,
+#         title={Implicit Neural Representation of Tileable Material Textures},
+#         author={Paz, Hallison and Novello, Tiago and Velho, Luiz},
+#         journal={arXiv preprint arXiv:2402.02208},
+#         year={2024}
+#       }
+
+
+# - title: "Adaptive reconstruction of implicit surfaces from depth images"
+#   authors: ["Hallison Paz", "Luiz Velho"]
+#   me: "Hallison Paz"
+#   venue: "SIBGRAPI 2018"
+#   date: 2018-10-29
+#   abstract: "We introduce an adaptive reconstruction method for recovering continuous implicit 3D surfaces from registered depth images, optimizing geometric fidelity and surface regularity."
+#   image: "/static/images/pubs/adaptive_surfaces_2018.jpg"
+#   links:
+#     project: "https://visgraf.impa.br"
+#     bibtex: |
+#       @inproceedings{paz2018adaptive,
+#         title={Adaptive reconstruction of implicit surfaces from depth images},
+#         author={Paz, Hallison and Velho, Luiz},
+#         booktitle={Proceedings of the 31st SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)},
+#         year={2018},
+#         organization={IEEE}
+#       }

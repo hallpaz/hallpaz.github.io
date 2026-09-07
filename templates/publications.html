@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Publications | {{ config.site_name }}{% endblock %}
+
+{% block content %}
+<div class="section-header">
+  <h1 class="section-title">Publications</h1>
+  <p class="section-subtitle">Conference papers, journal articles, posters, and preprints.</p>
+</div>
+
+{% for year_group in publications_by_year %}
+<div class="year-group">
+  <h2 class="year-heading">{{ year_group.year }}</h2>
+
+  <div class="pub-list">
+    {% for pub in year_group.publications %}
+    <article class="pub-card {% if pub.image %}has-image{% endif %}">
+      {% if pub.image %}
+      <div class="pub-image-wrapper">
+        <img src="{{ pub.image }}" alt="{{ pub.title }}" class="pub-image" loading="lazy">
+      </div>
+      {% endif %}
+
+      <div class="pub-details">
+        <div class="pub-header">
+          <h3 class="pub-title">{{ pub.title }}</h3>
+          <div class="pub-meta-badges">
+            <span class="badge">{{ pub.venue }}</span>
+            {% if pub.badge %}
+            <span class="badge badge-oral">{{ pub.badge }}</span>
+            {% endif %}
+          </div>
+        </div>
+
+        <p class="pub-authors">
+          {% for author in pub.authors %}
+          {% if author == pub.me %}
+          <strong>{{ author }}</strong>{% if not loop.last %}, {% endif %}
+          {% else %}
+          {{ author }}{% if not loop.last %}, {% endif %}
+          {% endif %}
+          {% endfor %}
+        </p>
+
+        <p class="pub-abstract">{{ pub.abstract }}</p>
+
+        <div class="pub-links">
+          {% if pub.links.paper is defined and pub.links.paper %}
+          <a href="{{ pub.links.paper }}" class="pub-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Paper
+          </a>
+          {% endif %}
+
+          {% if pub.links.code is defined and pub.links.code %}
+          <a href="{{ pub.links.code }}" class="pub-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Code
+          </a>
+          {% endif %}
+
+          {% if pub.links.project is defined and pub.links.project %}
+          <a href="{{ pub.links.project }}" class="pub-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
+            Project
+          </a>
+          {% endif %}
+
+          {% if pub.links.video is defined and pub.links.video %}
+          <a href="{{ pub.links.video }}" class="pub-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Video
+          </a>
+          {% endif %}
+
+          {% if pub.links.bibtex is defined and pub.links.bibtex %}
+          {% set bib_id = "bibtex-" ~ year_group.year ~ "-" ~ loop.index %}
+          <button class="pub-btn bibtex-toggle-btn" type="button" data-target="{{ bib_id }}">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            BibTeX
+          </button>
+          {% endif %}
+        </div>
+
+        {% if pub.links.bibtex is defined and pub.links.bibtex %}
+        <div class="bibtex-drawer" id="{{ bib_id }}">
+          <button class="bibtex-copy-btn" type="button" data-target="{{ bib_id }}">Copy</button>
+          <pre>{{ pub.links.bibtex | trim }}</pre>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

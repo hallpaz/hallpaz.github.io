@@ -1,0 +1,37 @@
+- year: 2024
+  courses:
+    - title: "Deep Reinforcement Learning"
+      institution: "Institute of Technology and Leadership (Inteli), São Paulo 🇧🇷"
+      role: "Instructor"
+      url: "https://hallpaz.github.io/drl/"
+      description: "Undergraduate course covering the foundations of reinforcement learning, Markov decision processes, value and policy iteration, Q-learning, deep Q-networks (DQN), and policy gradient methods."
+
+- year: 2023
+  courses:
+    - title: "3D Graphics Systems: AI Graphics - Theory and Practice"
+      institution: "Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro 🇧🇷"
+      role: "Teaching Assistant & Co-Lecturer"
+      url: "https://lvelho.impa.br/i3d23/"
+      description: "Graduate-level masters and doctoral course supervised by Prof. Luiz Velho. Delivered half of the lectures covering neural representations, implicit surfaces, coordinate networks, and generative modeling for 3D graphics."
+
+- year: 2022
+  courses:
+    - title: "3D Graphics Systems: Machine Learning for Modeling and Rendering"
+      institution: "Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro 🇧🇷"
+      role: "Teaching Assistant & Lab Instructor"
+      url: "https://lvelho.impa.br/i3d22/"
+      description: "Graduate-level masters and doctoral course supervised by Prof. Luiz Velho. Designed and delivered the hands-on practical laboratory sessions focusing on machine learning applied to 3D shape modeling, neural radiance fields, and rendering pipelines."
+
+- year: 2021
+  courses:
+    - title: "Fundamentals and Trends in Vision and Image Processing: The Rebirth of Generative Models"
+      institution: "Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro 🇧🇷"
+      role: "Teaching Assistant & Lab Instructor"
+      url: "https://lvelho.impa.br/ip21a/"
+      description: "Graduate-level masters and doctoral course supervised by Prof. Luiz Velho. Led the practical laboratory lectures covering computer vision pipelines, image processing paradigms, and modern deep generative architectures."
+
+    - title: "3D Graphics Systems: AI Graphics"
+      institution: "Instituto de Matemática Pura e Aplicada (IMPA), Rio de Janeiro 🇧🇷"
+      role: "Teaching Assistant & Lab Instructor"
+      url: "https://lvelho.impa.br/i3d21/"
+      description: "Graduate-level masters and doctoral course supervised by Prof. Luiz Velho. Taught practical laboratory sessions exploring deep learning integration into real-time and offline 3D graphics workflows."

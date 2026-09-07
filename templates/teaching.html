@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Teaching | {{ config.site_name }}{% endblock %}
+
+{% block content %}
+<div class="section-header">
+  <h1 class="section-title">Teaching &amp; Mentorship</h1>
+  <p class="section-subtitle">Academic university courses, graduate seminars, and open-access educational curricula.</p>
+</div>
+
+{% for group in teaching_by_year %}
+<div class="year-group">
+  <h2 class="year-heading">{{ group.year }}</h2>
+
+  <div class="teaching-list">
+    {% for course in group.courses %}
+    <div class="teaching-card">
+      <div class="teaching-header">
+        <h3 class="teaching-title">
+          {% if course.url %}
+          <a href="{{ course.url }}" target="_blank" rel="noopener noreferrer">{{ course.title }} &rarr;</a>
+          {% else %}
+          {{ course.title }}
+          {% endif %}
+        </h3>
+        <span class="badge">{{ course.role }}</span>
+      </div>
+
+      <div class="teaching-meta">
+        <span class="teaching-institution">{{ course.institution }}</span>
+      </div>
+
+      <p class="teaching-desc">{{ course.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
