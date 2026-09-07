@@ -82,7 +82,7 @@
   venue: "Computers & Graphics 2023"
   date: 2023-05-18
   abstract: "We extend sinusoidal networks, and we build an infrastructure to train networks to represent signals in multiresolution. Our coordinate-based networks, namely L-Net, M-Net, and S-Net, are continuous both in space and in scale as they are composed of multiple stages that progressively add finer details. Our experiments show that MR-Net can reach comparable Peak Signal-to-Noise Ratio (PSNR) to other architectures, on image reconstruction, while needing fewer additional parameters for multiresolution."
-  image: "/static/images/pubs/mrnet-masp"
+  image: "/static/images/pubs/mrnet-masp.gif"
   links:
     code: "https://github.com/visgraf/mrnet"
     project: "https://visgraf.impa.br/mrnet"

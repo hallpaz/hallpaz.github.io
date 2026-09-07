@@ -1,6 +1,6 @@
 - date: 2026-09-01
   tag: "New Position"
-  title: "Joined École Polytechnique as a Postdoctoral Researcher"
+  title: "Joined École Polytechnique 🇫🇷 as a Postdoctoral Researcher"
   body: "I have joined the Centre de Mathématiques Appliquées (CMAP) de l'École Polytechnique to work on adversarial machine learning and robust learning with El Mahdi El Mhamdi's group."
   link: null
 
@@ -19,14 +19,20 @@
 - date: 2026-04-26
   tag: "Conference"
   title: "Attended ICLR 2026 in Rio de Janeiro"
-  body: ""
-  link: null
+  body: 🎥 Check my YouTube video about this experience!
+  link: https://youtu.be/1Z1cDeUaF2Y
 
 - date: 2025-02-25
   tag: "New Position"
   title: "Joined Hand Talk by Sorenson"
   body: "I have joined Hand Talk as a Research Scientist to work on sign language translation models."
   link: null
+
+- date: 2024-12-01
+  tag: "Conference"
+  title: I am happy to be in Tokyo 🇯🇵 for Siggraph Asia 2024! 
+  body: I will present "The lips, the teeth, the tip of the tongue LTT tracking", the work I collaborated with during my internship at Meta.
+  link: https://dl.acm.org/doi/10.1145/3680528.3687691
 
 - date: 2024-11-25
   tag: "Milestone"
@@ -42,6 +48,20 @@
 
 - date: 2024-07-27
   tag: "Conference"
-  title: "I’m glad to be in Denver presenting my poster Spectral Periodic Networks for Neural Rendering at SIGGRAPH!"
+  title: I’m glad to be in Denver 🇺🇸 for my first SIGGRAPH! \o/
+  body: I will be presenting my poster Spectral Periodic Networks for Neural Rendering!
+  link: https://youtu.be/tE28JcQHUc8
+
+
+- date: 2024-06-17
+  tag: "Conference"
+  title: I am happy to be in Seattle for CVPR 2024!
+  body: I will present "Neural Implicit Morphing of Face Images" with my colleagues from IMPA.
+  link: https://youtu.be/BlLcKm1be2w
+
+- date: 2022-07-05
+  tag: "New Position"
+  title: I am very excited to be starting my internship at Meta, Reality Labs Research, in Pittsburgh 🇺🇸.
   body: ""
   link: null
+
